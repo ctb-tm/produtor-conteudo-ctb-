@@ -2,67 +2,89 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Infográfico CTB - Produtor de Eventos</title>
+  <title>Contratação Produtor(a) de Eventos - CTB</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-  <!-- Ícones exemplo Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
     body {
       background-color: #f7f9fa;
       font-family: 'Montserrat', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
     }
     .grid-bg {
-      background-image: linear-gradient(90deg, rgba(194,251,77,0.06) 1px, transparent 1px), linear-gradient(rgba(194,251,77,0.06) 1px, transparent 1px);
+      background-image: linear-gradient(90deg, rgba(195,254,77,0.07) 1px, transparent 1px), linear-gradient(rgba(195,254,77,0.07) 1px, transparent 1px);
       background-size: 32px 32px;
       min-height: 100vh;
-      padding: 40px 0;
+      padding: 38px 0;
     }
     .container {
-      max-width: 970px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 24px;
-      background: rgba(255,255,255,0.96);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px 0 rgba(25,48,90,0.13);
-      text-align: center;
+      padding: 35px;
+      background: rgba(255,255,255,.97);
+      border-radius: 20px;
+      box-shadow: 0 4px 30px 0 rgba(25,48,90,.13);
     }
     .logo img {
-      width: 140px;
+      width: 135px;
       margin-bottom: 30px;
+      display:block;
+      margin-left:auto; margin-right:auto;
     }
     h1 {
       color: #19305A;
       font-size: 2.2em;
-      margin-bottom: 14px;
+      text-align:center;
+      margin-bottom: 18px;
+      letter-spacing:-1px;
+      font-weight:700;
+    }
+    h2 {
+      color: #2BA02D;
+      font-size: 1.4em;
+      margin-top: 46px;
+      letter-spacing:-0.5px;
+    }
+    h3 {
+      color: #19305A;
+      font-size: 1.18em;
+      margin-top: 32px;
+      margin-bottom: 7px;
+    }
+    .box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px 0 rgba(25,48,90,0.10);
+      margin: 18px 0 24px 0;
+      padding: 25px 22px 15px 22px;
+      border-top: 6px solid #C3FE4D;
     }
     .infoboxes {
       display: flex;
       flex-wrap: wrap;
-      gap: 28px;
+      gap: 27px;
       justify-content: center;
+      margin: 32px 0 12px 0;
     }
     .infobox {
-      flex: 1 0 220px;
+      flex: 1 0 215px;
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 2px 10px 0 rgba(194,251,77,0.13);
-      padding: 28px 24px;
-      margin: 10px 0;
+      box-shadow: 0 2px 10px 0 rgba(43,160,45,0.08);
+      padding: 28px 19px 23px 19px;
       border-top: 5px solid #2BA02D;
-      min-width: 220px;
+      min-width: 200px;
       position: relative;
     }
     .infobox .material-icons {
-      font-size: 30px;
+      font-size: 27px;
       color: #C3FE4D;
-      margin-bottom: 9px;
+      margin-bottom: 7px;
     }
     .infobox strong {
-      font-size: 2.1em;
+      font-size: 1.95em;
       display: block;
-      margin: 10px 0 6px 0;
+      margin: 7px 0 2px 0;
       color: #2BA02D;
     }
     .infobox span {
@@ -71,31 +93,58 @@
       font-weight: 600;
     }
     .goals {
-      margin: 34px 0 6px 0;
+      margin: 30px 0 6px 0;
+      text-align:center;
     }
     .goal {
       display: inline-block;
       background: #C3FE4D;
       color: #19305A;
-      border-radius: 24px;
-      padding: 10px 22px;
-      font-size: 1.13em;
+      border-radius: 22px;
+      padding: 10px 17px;
+      font-size: 1.07em;
       margin: 0 8px 10px 8px;
       font-weight: bold;
-      box-shadow: 0 2px 7px 0 rgba(67,160,45,0.09);
+      box-shadow: 0 2px 8px 0 rgba(67,160,45,0.09);
+    }
+    /* tabelas estilizadas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 14px 0;
+      font-size: .98em;
+      background: #fafcff;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 7px 0 rgba(67,160,45,0.06);
+    }
+    th, td {
+      border: 1px solid #b7ddb3;
+      padding: 9px 7px;
+      text-align: left;
+    }
+    th {
+      background: #2BA02D;
+      color: #fff;
+      font-weight:700;
+    }
+    td {
+      color: #1b2b35;
+    }
+    tr:nth-child(even) {
+      background: #f4ffeb;
     }
     .footer-note {
       color: #2BA02D;
       font-size: .97em;
-      margin-top: 18px;
+      margin-top: 22px;
+      text-align:center;
       opacity: 0.7;
       font-style: italic;
     }
-    @media (max-width: 850px) {
-      .infoboxes {
-        flex-direction: column;
-        gap: 14px;
-      }
+    @media (max-width: 950px) {
+      .infoboxes { flex-direction: column; gap: 16px; }
+      .container { padding: 12px;}
     }
   </style>
 </head>
@@ -103,9 +152,22 @@
 <div class="grid-bg">
   <div class="container">
     <div class="logo">
-      <img src="ctb.jpg" alt="Logo Clube dos Tenistas da Bahia">
+      <img src="ctb.jpg" alt="Logo CTB">
     </div>
-    <h1>Metas e Indicadores do Produtor de Eventos</h1>
+    <h1>Contratação: Produtor(a) de Eventos<br>
+      Clube dos Tenistas da Bahia</h1>
+
+    <div class="box">
+      <b>Contexto Institucional:</b><br>
+      O Clube dos Tenistas da Bahia (CTB) promove integração esportiva, social e comunitária, inovando em eventos e experiências para associados e público externo.
+    </div>
+
+    <div class="box">
+      <b>Objetivo da Contratação:</b><br>
+      Profissionalizar e potencializar a gestão dos eventos esportivos e sociais, garantindo padrão de organização, criatividade e experiências marcantes para todos os públicos do CTB.
+    </div>
+
+    <h2>Metas e Indicadores Chave</h2>
     <div class="infoboxes">
       <div class="infobox">
         <span class="material-icons">calendar_month</span>
@@ -115,12 +177,12 @@
       <div class="infobox">
         <span class="material-icons">emoji_people</span>
         <strong>95%</strong>
-        <span>Satisfação dos Associados</span>
+        <span>Satisfação dos associados</span>
       </div>
       <div class="infobox">
         <span class="material-icons">attach_money</span>
         <strong>92%</strong>
-        <span>Execução dentro do Orçamento</span>
+        <span>Execução dentro do orçamento</span>
       </div>
       <div class="infobox">
         <span class="material-icons">volunteer_activism</span>
@@ -138,9 +200,142 @@
       <span class="goal">Aumentar engajamento do público em 30%</span>
       <span class="goal">80% de ações com patrocínio local</span>
     </div>
+
+    <h2>Principais Atribuições</h2>
+    <div class="box" style="background-color:#f9fff4;">
+      <ul>
+        <li>Desenvolver conceitos criativos para eventos esportivos e sociais.</li>
+        <li>Planejar e executar cronogramas detalhados, etapas e responsáveis.</li>
+        <li>Elaborar orçamentos, negociar fornecedores e fechar contratos.</li>
+        <li>Supervisionar montagem, execução e desmontagem de eventos.</li>
+        <li>Integrar equipes técnicas, manutenção, comunicação e voluntários.</li>
+        <li>Apoiar a divulgação dos eventos nas mídias do clube.</li>
+        <li>Garantir segurança, saúde e acessibilidade em todos os eventos.</li>
+        <li>Elaborar relatórios e avaliações pós-evento, sugerindo melhorias.</li>
+      </ul>
+    </div>
+
+    <h2>Plano Funcional</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <th>Área</th><th>Atividade</th><th>Responsabilidade</th><th>Frequência</th>
+        </tr>
+        <tr><td>Planejamento</td><td>Desenvolver briefing e conceito do evento</td><td>Alta</td><td>Por projeto</td></tr>
+        <tr><td>Planejamento</td><td>Criar cronograma detalhado de produção</td><td>Alta</td><td>Por projeto</td></tr>
+        <tr><td>Planejamento</td><td>Definir objetivos e metas do evento</td><td>Média</td><td>Por projeto</td></tr>
+        <tr><td>Planejamento</td><td>Elaborar plano de contingência</td><td>Alta</td><td>Por projeto</td></tr>
+        <tr><td>Orçamento e Finanças</td><td>Elaborar orçamento detalhado</td><td>Alta</td><td>Por projeto</td></tr>
+        <tr><td>Orçamento e Finanças</td><td>Controlar custos durante produção</td><td>Alta</td><td>Diária</td></tr>
+        <tr><td>Orçamento e Finanças</td><td>Negociar preços com fornecedores</td><td>Média</td><td>Semanal</td></tr>
+        <tr><td>Fornecedores</td><td>Pesquisar e selecionar fornecedores</td><td>Média</td><td>Por projeto</td></tr>
+        <tr><td>Fornecedores</td><td>Gerenciar contratos e termos</td><td>Alta</td><td>Por projeto</td></tr>
+        <tr><td>Fornecedores</td><td>Avaliar qualidade dos serviços</td><td>Média</td><td>Mensal</td></tr>
+        <tr><td>Logística</td><td>Coordenar montagem e desmontagem</td><td>Alta</td><td>Por evento</td></tr>
+        <tr><td>Logística</td><td>Gerenciar equipe de produção</td><td>Alta</td><td>Diária</td></tr>
+        <tr><td>Logística</td><td>Supervisionar setup técnico</td><td>Média</td><td>Por evento</td></tr>
+        <tr><td>Logística</td><td>Controlar fluxo de materiais</td><td>Média</td><td>Diária</td></tr>
+        <tr><td>Marketing</td><td>Apoiar estratégias de divulgação</td><td>Baixa</td><td>Semanal</td></tr>
+        <tr><td>Marketing</td><td>Coordenar material promocional</td><td>Baixa</td><td>Por projeto</td></tr>
+        <tr><td>Marketing</td><td>Gerenciar relacionamento com mídia</td><td>Baixa</td><td>Por evento</td></tr>
+        <tr><td>Execução</td><td>Supervisionar execução geral</td><td>Alta</td><td>Por evento</td></tr>
+        <tr><td>Execução</td><td>Resolver problemas em tempo real</td><td>Alta</td><td>Por evento</td></tr>
+        <tr><td>Execução</td><td>Garantir qualidade da experiência</td><td>Alta</td><td>Por evento</td></tr>
+        <tr><td>Pós-Evento</td><td>Avaliar resultados e métricas</td><td>Média</td><td>Por evento</td></tr>
+        <tr><td>Pós-Evento</td><td>Elaborar relatório final</td><td>Média</td><td>Por evento</td></tr>
+        <tr><td>Administrativo</td><td>Manter documentação organizada</td><td>Baixa</td><td>Diária</td></tr>
+        <tr><td>Administrativo</td><td>Cumprir rotinas administrativas</td><td>Baixa</td><td>Diária</td></tr>
+      </table>
+    </div>
+
+    <h2>Checklist Operacional</h2>
+    <div class="box" style="background-color:#f9fff4;">
+      <table>
+        <tr>
+          <th>Categoria</th><th>Tarefa</th><th>Prazo</th><th>Responsável</th>
+        </tr>
+        <tr><td>Preparação Inicial</td><td>Reunião inicial com diretoria/comissão</td><td>30 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Preparação Inicial</td><td>Definição do briefing completo</td><td>30 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Preparação Inicial</td><td>Análise de público-alvo e objetivos</td><td>30 dias antes</td><td>Produtor + Diretoria</td></tr>
+        <tr><td>Preparação Inicial</td><td>Estabelecimento de cronograma geral</td><td>30 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Planejamento</td><td>Criação do cronograma detalhado</td><td>25 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Planejamento</td><td>Definição de local/data do evento</td><td>25 dias antes</td><td>Produtor + Diretoria</td></tr>
+        <tr><td>Planejamento</td><td>Elaboração do projeto conceitual</td><td>25 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Planejamento</td><td>Mapeamento de necessidades técnicas</td><td>20 dias antes</td><td>Produtor + Técnicos</td></tr>
+        <tr><td>Planejamento</td><td>Desenvolvimento do plano de contingência</td><td>20 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Orçamento</td><td>Elaboração de orçamento preliminar</td><td>25 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Orçamento</td><td>Detalhamento de custos por categoria</td><td>20 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Orçamento</td><td>Aprovação do orçamento</td><td>18 dias antes</td><td>Produtor + Diretoria</td></tr>
+        <tr><td>Orçamento</td><td>Controle de custos durante produção</td><td>Durante produção</td><td>Produtor</td></tr>
+        <tr><td>Fornecedores</td><td>Pesquisa e cotação de fornecedores</td><td>20 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Fornecedores</td><td>Seleção e contratação de fornecedores</td><td>18 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Fornecedores</td><td>Elaboração e assinatura de contratos</td><td>15 dias antes</td><td>Produtor + Jurídico</td></tr>
+        <tr><td>Fornecedores</td><td>Acompanhamento da entrega dos serviços</td><td>Durante produção</td><td>Produtor</td></tr>
+        <tr><td>Produção</td><td>Coordenação da equipe de produção</td><td>15 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Produção</td><td>Supervisão da produção de materiais</td><td>Durante produção</td><td>Produtor + Equipe</td></tr>
+        <tr><td>Produção</td><td>Controle de qualidade dos entregáveis</td><td>Durante produção</td><td>Produtor</td></tr>
+        <tr><td>Produção</td><td>Gerenciamento de prazos e entregas</td><td>Durante produção</td><td>Produtor</td></tr>
+        <tr><td>Produção</td><td>Reuniões de alinhamento com equipe</td><td>Semanal</td><td>Produtor</td></tr>
+        <tr><td>Pré-Evento</td><td>Checklist final de todos os itens</td><td>3 dias antes</td><td>Produtor + Equipe</td></tr>
+        <tr><td>Pré-Evento</td><td>Confirmação com fornecedores</td><td>2 dias antes</td><td>Produtor</td></tr>
+        <tr><td>Pré-Evento</td><td>Briefing equipe de execução</td><td>1 dia antes</td><td>Produtor + Equipe</td></tr>
+        <tr><td>Pré-Evento</td><td>Preparação do local do evento</td><td>Dia do evento</td><td>Produtor + Equipe</td></tr>
+        <tr><td>Execução</td><td>Supervisão da montagem geral</td><td>Dia do evento</td><td>Produtor + Equipe</td></tr>
+        <tr><td>Execução</td><td>Coordenação da equipe no dia</td><td>Dia do evento</td><td>Produtor</td></tr>
+        <tr><td>Execução</td><td>Resolução de problemas em tempo real</td><td>Dia do evento</td><td>Produtor</td></tr>
+        <tr><td>Execução</td><td>Controle de qualidade durante execução</td><td>Dia do evento</td><td>Produtor</td></tr>
+        <tr><td>Execução</td><td>Acompanhamento do cronograma</td><td>Dia do evento</td><td>Produtor</td></tr>
+        <tr><td>Pós-Evento</td><td>Supervisão da desmontagem</td><td>Após evento</td><td>Produtor + Equipe</td></tr>
+        <tr><td>Pós-Evento</td><td>Avaliação de resultados e satisfação</td><td>1 semana após</td><td>Produtor + Diretoria</td></tr>
+        <tr><td>Pós-Evento</td><td>Elaboração do relatório final completo</td><td>1 semana após</td><td>Produtor</td></tr>
+      </table>
+    </div>
+
+    <h2>Mapa de Competências</h2>
+    <div class="box">
+      <table>
+        <tr>
+          <th>Competência</th>
+          <th>Descrição</th>
+          <th>Nível</th>
+          <th>Como Desenvolver</th>
+        </tr>
+        <tr><td>Formação Acadêmica</td><td>Ensino médio completo (superior desejável)</td><td>Fundamental</td><td>Cursos técnicos/superiores</td></tr>
+        <tr><td>Experiência Profissional</td><td>Produção de eventos/administração</td><td>Fundamental</td><td>Estágios, voluntariado, prática</td></tr>
+        <tr><td>Conhecimento Técnico</td><td>Gestão de fornecedores/mercado de eventos</td><td>Intermediário</td><td>Cursos, eventos do setor</td></tr>
+        <tr><td>Habilidades Digitais</td><td>Excel, ferramentas de gestão</td><td>Intermediário</td><td>Curso Excel, treinamentos</td></tr>
+        <tr><td>Documentação Pessoal</td><td>CNH B válida</td><td>Fundamental</td><td>Processo regular no Detran</td></tr>
+        <tr><td>Organização e Gestão</td><td>Prioridade de tarefas, cronogramas</td><td>Avançado</td><td>Métodos de projetos</td></tr>
+        <tr><td>Comunicação</td><td>Clareza, assertividade, profissionalismo</td><td>Avançado</td><td>Cursos oratória, apresentação</td></tr>
+        <tr><td>Negociação</td><td>Negociar contratos e preços</td><td>Intermediário</td><td>Workshops, técnicas de vendas</td></tr>
+        <tr><td>Resolução de Problemas</td><td>Resolver rapidamente</td><td>Avançado</td><td>Estudos de caso, experiência prática</td></tr>
+        <tr><td>Criatividade</td><td>Soluções inovadoras</td><td>Intermediário</td><td>Design thinking</td></tr>
+        <tr><td>Trabalho em Equipe</td><td>Colaboração multidisciplinar</td><td>Avançado</td><td>Dinâmicas, projetos coletivos</td></tr>
+        <tr><td>Proatividade</td><td>Antecipação de necessidades</td><td>Avançado</td><td>Coaching, mentorias</td></tr>
+        <tr><td>Adaptabilidade</td><td>Lidar com mudanças</td><td>Avançado</td><td>Experiências desafiadoras</td></tr>
+        <tr><td>Gestão de Tempo</td><td>Cumprimento de prazos</td><td>Avançado</td><td>Técnicas de planejamento</td></tr>
+        <tr><td>Liderança</td><td>Coordenação e delegação</td><td>Intermediário</td><td>Gestão de pessoas</td></tr>
+        <tr><td>Controle Financeiro</td><td>Controle de orçamento/custos</td><td>Intermediário</td><td>Gestão financeira</td></tr>
+        <tr><td>Relacionamento Interpessoal</td><td>Redes com clientes, fornecedores</td><td>Avançado</td><td>Networking</td></tr>
+        <tr><td>Visão Estratégica</td><td>Objetivos/metas de evento</td><td>Intermediário</td><td>Planejamento estratégico</td></tr>
+      </table>
+    </div>
+
+    <h2>Benefícios e Perfil Ideal</h2>
+    <div class="box" style="background-color:#f5fded;">
+      <ul>
+        <li>Vale Alimentação/Refeição, Auxílio Transporte</li>
+        <li>Remuneração conforme perfil/experiência</li>
+        <li>Ambiente colaborativo, aprendizado contínuo</li>
+        <li>Atuação em eventos esportivos, sociais e corporativos do CTB</li>
+      </ul>
+      <b>Perfil ideal:</b> Formação técnica ou superior, experiência com eventos, organização, criatividade, proatividade, comunicação, disponibilidade para fins de semana, CNH B e residir em Salvador.
+    </div>
+
     <div class="footer-note">
-      Metas alinhadas ao Plano Estratégico do Clube dos Tenistas da Bahia. Ícones: Google Material Icons.<br>
-      Cores institucionais: #C3FE4D (Verde limão), #2BA02D (Verde escuro), #19305A (Azul CTB)
+      Clube dos Tenistas da Bahia (CTB) &copy; 2025<br>
+      Cores: #C3FE4D (Verde limão), #2BA02D (Verde escuro), #19305A (Azul CTB) — Manual da Marca.<br>
+      Para uso institucional/processos seletivos. Logomarca meramente ilustrativa.
     </div>
   </div>
 </div>
