@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Infográfico CTB - Produtor de Eventos</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- Ícones exemplo Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f9fa;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .grid-bg {
+      background-image: linear-gradient(90deg, rgba(194,251,77,0.06) 1px, transparent 1px), linear-gradient(rgba(194,251,77,0.06) 1px, transparent 1px);
+      background-size: 32px 32px;
+      min-height: 100vh;
+      padding: 40px 0;
+    }
+    .container {
+      max-width: 970px;
+      margin: 0 auto;
+      padding: 24px;
+      background: rgba(255,255,255,0.96);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px 0 rgba(25,48,90,0.13);
+      text-align: center;
+    }
+    .logo img {
+      width: 140px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #19305A;
+      font-size: 2.2em;
+      margin-bottom: 14px;
+    }
+    .infoboxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: center;
+    }
+    .infobox {
+      flex: 1 0 220px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px 0 rgba(194,251,77,0.13);
+      padding: 28px 24px;
+      margin: 10px 0;
+      border-top: 5px solid #2BA02D;
+      min-width: 220px;
+      position: relative;
+    }
+    .infobox .material-icons {
+      font-size: 30px;
+      color: #C3FE4D;
+      margin-bottom: 9px;
+    }
+    .infobox strong {
+      font-size: 2.1em;
+      display: block;
+      margin: 10px 0 6px 0;
+      color: #2BA02D;
+    }
+    .infobox span {
+      font-size: 1em;
+      color: #19305A;
+      font-weight: 600;
+    }
+    .goals {
+      margin: 34px 0 6px 0;
+    }
+    .goal {
+      display: inline-block;
+      background: #C3FE4D;
+      color: #19305A;
+      border-radius: 24px;
+      padding: 10px 22px;
+      font-size: 1.13em;
+      margin: 0 8px 10px 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 7px 0 rgba(67,160,45,0.09);
+    }
+    .footer-note {
+      color: #2BA02D;
+      font-size: .97em;
+      margin-top: 18px;
+      opacity: 0.7;
+      font-style: italic;
+    }
+    @media (max-width: 850px) {
+      .infoboxes {
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="grid-bg">
+  <div class="container">
+    <div class="logo">
+      <img src="ctb.jpg" alt="Logo Clube dos Tenistas da Bahia">
+    </div>
+    <h1>Metas e Indicadores do Produtor de Eventos</h1>
+    <div class="infoboxes">
+      <div class="infobox">
+        <span class="material-icons">calendar_month</span>
+        <strong>18</strong>
+        <span>Eventos realizados/ano</span>
+      </div>
+      <div class="infobox">
+        <span class="material-icons">emoji_people</span>
+        <strong>95%</strong>
+        <span>Satisfação dos Associados</span>
+      </div>
+      <div class="infobox">
+        <span class="material-icons">attach_money</span>
+        <strong>92%</strong>
+        <span>Execução dentro do Orçamento</span>
+      </div>
+      <div class="infobox">
+        <span class="material-icons">volunteer_activism</span>
+        <strong>3</strong>
+        <span>Novos fornecedores contratados/ano</span>
+      </div>
+      <div class="infobox">
+        <span class="material-icons">tips_and_updates</span>
+        <strong>4</strong>
+        <span>Eventos inovadores/ano</span>
+      </div>
+    </div>
+    <div class="goals">
+      <span class="goal">Reduzir custos em 10%</span>
+      <span class="goal">Aumentar engajamento do público em 30%</span>
+      <span class="goal">80% de ações com patrocínio local</span>
+    </div>
+    <div class="footer-note">
+      Metas alinhadas ao Plano Estratégico do Clube dos Tenistas da Bahia. Ícones: Google Material Icons.<br>
+      Cores institucionais: #C3FE4D (Verde limão), #2BA02D (Verde escuro), #19305A (Azul CTB)
+    </div>
+  </div>
+</div>
+</body>
+</html>
